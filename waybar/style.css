@@ -1,0 +1,125 @@
+/* ===== Global ===== */
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+/* ===== Bar ===== */
+window#waybar {
+    background-color: rgba(18, 22, 30, 0.55);
+    color: #a8b4c4;
+    border-radius: 14px;
+    border: 1px solid rgba(100, 130, 180, 0.12);
+}
+
+/* ===== Module Shared ===== */
+#workspaces,
+#clock,
+#custom-spotify,
+#cpu,
+#memory,
+#pulseaudio {
+    background-color: rgba(25, 32, 45, 0.45);
+    padding: 0 14px;
+    margin: 5px 4px;
+    border-radius: 10px;
+    border: 1px solid rgba(90, 120, 170, 0.1);
+    transition: all 0.3s ease;
+}
+
+#workspaces:hover,
+#clock:hover,
+#custom-spotify:hover,
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover {
+    background-color: rgba(35, 45, 65, 0.6);
+    border: 1px solid rgba(100, 140, 200, 0.2);
+}
+
+/* ===== Workspaces ===== */
+#workspaces button {
+    color: #5a6a80;
+    background: transparent;
+    padding: 0 6px;
+    margin: 0 2px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: #c8d4e6;
+    background: rgba(70, 100, 150, 0.35);
+    border-radius: 6px;
+}
+
+#workspaces button.occupied {
+    color: #7a8da6;
+}
+
+#workspaces button:hover {
+    color: #d0dae8;
+    background: rgba(70, 100, 150, 0.2);
+}
+
+/* ===== Arch Logo ===== */
+#custom-arch {
+    color: #5e8abf;
+    font-size: 18px;
+    padding: 0 14px 0 16px;
+    margin: 5px 4px 5px 6px;
+    background: transparent;
+}
+
+/* ===== Spotify ===== */
+#custom-cave {
+    color: #6a9fb5;
+}
+
+/* ===== Clock ===== */
+#clock {
+    color: #8aabc4;
+}
+
+/* ===== CPU ===== */
+#cpu {
+    color: #7a9ab8;
+}
+
+/* ===== Memory ===== */
+#memory {
+    color: #6b8da8;
+}
+
+/* ===== Audio ===== */
+#pulseaudio {
+    color: #7694ad;
+}
+
+#pulseaudio.muted {
+    color: #4a5568;
+}
+#custom-notification {
+    color: #7694ad;
+    background-color: rgba(25, 32, 45, 0.45);
+    padding: 0 14px;
+    margin: 5px 4px;
+    border-radius: 10px;
+    border: 1px solid rgba(90, 120, 170, 0.1);
+}
+#custom-power {
+    color: #7694ad;
+    background-color: rgba(25, 32, 45, 0.45);
+    padding: 0 14px;
+    margin: 5px 4px;
+    border-radius: 10px;
+    border: 1px solid rgba(90, 120, 170, 0.1);
+}
+
+#custom-power:hover {
+    background-color: rgba(35, 45, 65, 0.6);
+    border-color: rgba(100, 140, 200, 0.2);
+}

@@ -1,0 +1,83 @@
+/* 全体フォント設定 (Nerd Fontが必要) */
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+/* バー本体: 透過させて浮かせるデザイン */
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.7); /* Catppuccin Mochaのベース色 + 透過 */
+    color: #cdd6f4; /* テキスト色 */
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 12px; /* 角を丸くしてフローティング感を出す */
+    margin: 8px 12px; /* 画面端から少し浮かせる */
+}
+
+/* 各モジュールの共通装飾 */
+#workspaces, #clock, #custom-spotify, #cpu, #memory, #network, #pulseaudio {
+    background-color: rgba(49, 50, 68, 0.8); /* モジュール背景 */
+    padding: 0 12px;
+    margin: 4px 6px;
+    border-radius: 8px;
+    border: 1px solid rgba(137, 180, 250, 0.2); /* 薄い青色の枠線 */
+}
+
+/* ワークスペースボタン全体の基本設定 */
+#workspaces button {
+    color: #cdd6f4;          /* 通常時の数字の色（明るい白/グレー） */
+    background: transparent; /* 背景は透明に */
+    padding: 0 5px;
+    margin: 0 2px;
+}
+
+/* 現在表示している（アクティブな）ワークスペース */
+#workspaces button.active {
+    color: #1e1e2e;          /* アクティブ時の数字の色（濃い色） */
+    background: #c0c0c0;     /* アクティブ時の背景色（Spotify風の緑など） */
+    border-radius: 5px;
+}
+
+/* ウィンドウが存在する（中身がある）ワークスペース */
+#workspaces button.occupied {
+    color: #f5c2e7;          /* 中身がある時の数字の色（ピンクなど） */
+}
+
+/* ホバーした時 */
+#workspaces button:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#workspaces button.active:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/* Spotify専用: グリーンでアクセント */
+#custom-spotify {
+    color: #a6e3a1; 
+    font-weight: bold;
+}
+
+/* 時計: 落ち着いたピンク色 */
+#clock {
+    color: #f5c2e7;
+}
+
+#custom-arch {
+    color: #A1A3A6; 
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#cpu {
+    color: #fab387; /* Catppuccin Peach */
+}
+
+#memory {
+    color: #f9e2af; /* Catppuccin Yellow */
+}

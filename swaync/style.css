@@ -1,0 +1,66 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+}
+
+.control-center {
+    background-color: rgba(18, 22, 30, 0.85);
+    border: 1px solid rgba(90, 120, 170, 0.15);
+    border-radius: 14px;
+    color: #a8b4c4;
+}
+
+.notification {
+    background-color: rgba(25, 32, 45, 0.7);
+    border: 1px solid rgba(90, 120, 170, 0.1);
+    border-radius: 10px;
+    margin: 4px 8px;
+    padding: 8px;
+}
+
+.notification-content {
+    color: #a8b4c4;
+}
+
+.widget-title {
+    color: #8aabc4;
+    padding: 8px 12px;
+}
+
+.widget-title button {
+    background: rgba(70, 100, 150, 0.3);
+    border-radius: 8px;
+    color: #a8b4c4;
+    padding: 4px 12px;
+}
+
+.widget-mpris {
+    background-color: rgba(25, 35, 50, 0.6);
+    border-radius: 10px;
+    margin: 4px 8px;
+    padding: 8px;
+}
+
+.widget-mpris-album-art {
+    border-radius: 8px;
+}
+
+.widget-mpris-title {
+    color: #c8d4e6;
+    font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+    color: #7a8da6;
+}
+
+.widget-mpris button {
+    color: #8aabc4;
+    background: transparent;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.widget-mpris button:hover {
+    background: rgba(70, 100, 150, 0.3);
+}

@@ -1,0 +1,29 @@
+{
+    "positionX": "right",
+    "positionY": "top",
+    "control-center-width": 380,
+    "control-center-margin-top": 8,
+    "control-center-margin-right": 8,
+    "notification-window-width": 350,
+    "notification-icon-size": 48,
+    "mpris-enabled": true,
+    "mpris-interpolate": true,
+    "mpris-album-art-radius": 8,
+    "mpris-image-size": 64,
+    "widgets": [
+        "title",
+        "mpris",
+        "notifications"
+    ],
+    "widget-config": {
+        "title": {
+            "text": "Notifications",
+            "clear-all-button": true
+        },
+"mpris": {
+    "image-size": 80,
+    "image-radius": 8,
+    "blur": false
+}
+    }
+}
