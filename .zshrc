@@ -105,4 +105,4 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 alias cava='cava -p /dev/null'
-sorce ~/.zshrc.secret
+source ~/.zshrc.secret
